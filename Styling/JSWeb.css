@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #e7e7e7;
-    --background-color: #e7e7e7;
+    --primary-color: #f5f4df;
+    --background-color: #f5f4df;
     --font: sans-serif;
   }
   
@@ -12,23 +12,26 @@
   body {
     background: var(--background-color);
     font-family: var(--font);
-    display: flex;
-    justify-content: center;
+    
   }
-  
+  .split{
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    background: var(--primary-color);
+  }
   /* Timeline Container */
   .timeline {
-    width:50%;
+   left:0;
     align-items: center;
-    float: left;
-    background: var(--primary-color);
-    margin: 20px auto;
-    padding: 20px;
-  }
+   }
   
   /* Card container */
   .card {
-    
   left: 25%;
     position: relative;
     max-width: 400px;
@@ -152,31 +155,29 @@
 
     /* display Container */
 	#display {
-		width:50%;
-		display: flex;
-		float: right;
-		background: var(--primary-color);
-		margin: 20px auto;
-		padding: 20px;
-		
+    right: 20px;
 	}
+  #center{
+    height:100%;
+    width:100%;
+    text-align: center;
+  }
 	.item{
-		position: absolute;
-		right:25%;
-		top:50%;
-		width: max-content
+    width: max-content
 	}
 	#hWorld{
-		border: 10px solid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 10px solid;
 		background-color: black;
-		color: blue;
 		scale: 300%;
 		font-weight: bold;
 	}
 #TheCanvas{
 	display: inline;
-	width:100%;
-	height:100%;
+	width:200%;
+	height:90%;
 	
 }
 #second{

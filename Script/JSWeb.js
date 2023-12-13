@@ -4,7 +4,7 @@ secondItem();
 
 function expandinfo() {
 	const expand = document.getElementsByClassName("expand");
-	const display = document.getElementById("display");
+	const display = document.getElementById("center");
 	displayChild = [].slice.call(display.getElementsByTagName("*"), 0);
 
 	//initially hide all but first
